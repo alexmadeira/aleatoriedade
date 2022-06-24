@@ -10,10 +10,13 @@ export default createGlobalStyle`
     font-size: 62.5%;
   }
   body {
-
-    background: #999;
-    /* ${props => props.theme.colors.background}; */
+    background:#000000;
     color: ${props => props.theme.colors.text};
     font-family: 'Open Sans', sans-serif;
+    height:100vh;
+  }
+  #__next{
+    display:flex;
+    height:100%;
   }
 `

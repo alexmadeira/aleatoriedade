@@ -1,14 +1,19 @@
 import React from 'react'
-import Head from 'next/head'
+
+import useNumber from '~/hooks/useNumber'
+
+import SowNumber from '~/Components/SowNumber'
+import BarList from '~/Components/BarList'
 
 import { Container } from '~/styles/pages/Home'
 
 const Home: React.FC = () => {
+  const { newNumber } = useNumber()
+
   return (
     <Container>
-      <Head>
-        <title>Homepage</title>
-      </Head>
+      <SowNumber />
+      <BarList />
     </Container>
   )
 }
